@@ -12,6 +12,8 @@ public class SelectionManager : MonoBehaviour
     public GameObject interaction_Info_UI;
     Text interaction_text;
 
+    private Transform highlight;
+
     private void Start()
     {
         interaction_text = interaction_Info_UI.GetComponent<Text>();
@@ -32,6 +34,12 @@ public class SelectionManager : MonoBehaviour
 
     void Update()
     {
+        if (highlight != null)
+        {
+            highlight.gameObject.GetComponent<Outline>().enabled = false;
+            highlight = null;
+        }
+
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
         RaycastHit hit;
         if (Physics.Raycast(ray, out hit))
@@ -39,16 +47,32 @@ public class SelectionManager : MonoBehaviour
             var selectionTransform = hit.transform;
             InteractableObject interactable = selectionTransform.GetComponent<InteractableObject>();
 
+            highlight = hit.transform;
+
             if (interactable && interactable.playerInRange)
             {
                 interaction_text.text = interactable.GetItemName();
                 interaction_Info_UI.SetActive(true);
                 onTarget = true;
+
+                if (highlight.gameObject.GetComponent<Outline>() != null)
+                {
+                    highlight.gameObject.GetComponent<Outline>().enabled = true;
+                }
+                else
+                {
+                    Outline outline = highlight.gameObject.AddComponent<Outline>();
+                    outline.enabled = true;
+                    highlight.gameObject.GetComponent<Outline>().OutlineColor = Color.magenta;
+                    highlight.gameObject.GetComponent<Outline>().OutlineWidth = 7.0f;
+                }
             }
             else
             {
                 interaction_Info_UI.SetActive(false);
                 onTarget = false;
+
+                highlight = null;
             }
 
         }
