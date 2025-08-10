@@ -12,6 +12,8 @@ public class SelectionManager : MonoBehaviour
     public GameObject interaction_Info_UI;
     Text interaction_text;
 
+    public GameObject selectedObject;
+
     private Transform highlight;
 
     private void Start()
@@ -54,6 +56,7 @@ public class SelectionManager : MonoBehaviour
                 interaction_text.text = interactable.GetItemName();
                 interaction_Info_UI.SetActive(true);
                 onTarget = true;
+                selectedObject = interactable.gameObject;
 
                 if (highlight.gameObject.GetComponent<Outline>() != null)
                 {

@@ -66,7 +66,11 @@ public class InventorySystem : MonoBehaviour
         else if (Input.GetKeyDown(KeyCode.I) && isOpen)
         {
             inventoryScreenUI.SetActive(false);
-            Cursor.lockState = CursorLockMode.Locked;
+
+            if (!CraftingSystem.Instance.isOpen)
+            {
+                Cursor.lockState = CursorLockMode.Locked;
+            }
             isOpen = false;
         }
     }
@@ -77,7 +81,7 @@ public class InventorySystem : MonoBehaviour
         itemToAdd = Instantiate(Resources.Load<GameObject>(itemName), whatSlotToEquip.transform.position, whatSlotToEquip.transform.rotation);
         itemToAdd.transform.SetParent(whatSlotToEquip.transform);
         itemList.Add(itemName);
-        
+
     }
 
     public bool CheckIfFull()
@@ -113,6 +117,44 @@ public class InventorySystem : MonoBehaviour
         }
 
         return new GameObject();
+    }
+
+    public void RemoveItem(string nameToRemove, int amountToRemove)
+    {
+        int counter = amountToRemove;
+
+        //start from the last slot and go up
+        for (var i = slotList.Count - 1; i >= 0; i--)
+        {
+            //if the inventory slot has an item
+            if (slotList[i].transform.childCount > 0)
+            {
+                //if the item in the slot is the the correct item and we haven't found enough resources yet
+                if (slotList[i].transform.GetChild(0).name == nameToRemove + "(Clone)" && counter != 0)
+                {
+                    // remove the item and subtract 1 from the counter
+                    Destroy(slotList[i].transform.GetChild(0).gameObject);
+                    counter -= 1;
+                }
+            }
+        }
+    }
+
+    public void ReCalculateList()
+    {
+        itemList.Clear();
+
+        foreach (GameObject slot in slotList)
+        {
+            if (slot.transform.childCount > 0)
+            {
+                string name = slot.transform.GetChild(0).name;
+                string str2 = "(Clone)";
+                string result = name.Replace(str2, "");
+
+                itemList.Add(result);
+            }
+        }
     }
  
 }
