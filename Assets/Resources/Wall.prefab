@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7239712526178711203}
   - component: {fileID: 6040004056398807286}
   - component: {fileID: 4488227301479611767}
+  - component: {fileID: -5811151661533223966}
   m_Layer: 5
   m_Name: Wall
   m_TagString: Untagged
@@ -101,3 +102,23 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
+--- !u!114 &-5811151661533223966
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5613381700741692579}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 377794895d4fcbe4da1fda53c1fa0796, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isTrashable: 0
+  thisName: Wall
+  thisDescription: You're running me up a wall.
+  thisFunctionality: Building
+  isConsumable: 0
+  healthEffect: 0
+  caloriesEffect: 0
+  hydrationEffect: 0

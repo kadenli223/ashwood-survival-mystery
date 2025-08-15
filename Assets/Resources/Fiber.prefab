@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4730630907812010408}
   - component: {fileID: 6229779109485858999}
   - component: {fileID: 1676355157275034747}
+  - component: {fileID: 7229473134416621839}
   m_Layer: 5
   m_Name: Fiber
   m_TagString: Untagged
@@ -101,3 +102,23 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
+--- !u!114 &7229473134416621839
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7058928130505169523}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 377794895d4fcbe4da1fda53c1fa0796, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isTrashable: 0
+  thisName: Fiber
+  thisDescription: Fiberous.
+  thisFunctionality: Crafting
+  isConsumable: 0
+  healthEffect: 0
+  caloriesEffect: 0
+  hydrationEffect: 0

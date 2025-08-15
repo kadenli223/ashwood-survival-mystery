@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4409576711892125053}
   - component: {fileID: 1334874958565311212}
   - component: {fileID: 9110686842821155444}
+  - component: {fileID: 5433456161027727260}
   m_Layer: 5
   m_Name: Campfire
   m_TagString: Untagged
@@ -101,3 +102,23 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
+--- !u!114 &5433456161027727260
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7766430684813617735}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 377794895d4fcbe4da1fda53c1fa0796, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isTrashable: 0
+  thisName: Campfire
+  thisDescription: fire...BADDD!!
+  thisFunctionality: Decoration
+  isConsumable: 0
+  healthEffect: 0
+  caloriesEffect: 0
+  hydrationEffect: 0

@@ -188,7 +188,7 @@ public class CraftingSystem : MonoBehaviour
 
     }
 
-    private void RefreshNeededItems()
+    public void RefreshNeededItems()
     {
         int wood_count = 0;
         int stone_count = 0;

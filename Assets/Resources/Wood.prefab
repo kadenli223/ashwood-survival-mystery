@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3737440425624191424}
   - component: {fileID: 335582777494679171}
   - component: {fileID: -8418864131631489165}
+  - component: {fileID: -3265248804665423528}
   m_Layer: 5
   m_Name: Wood
   m_TagString: Untagged
@@ -101,3 +102,23 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
+--- !u!114 &-3265248804665423528
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7991776935029050119}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 377794895d4fcbe4da1fda53c1fa0796, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isTrashable: 0
+  thisName: Wood
+  thisDescription: So many uses.
+  thisFunctionality: Crafting
+  isConsumable: 0
+  healthEffect: 0
+  caloriesEffect: 0
+  hydrationEffect: 0
