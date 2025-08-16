@@ -14,6 +14,7 @@ Ashwood Survival is a Unity-based survival game set in a forested wilderness. Pl
 
 ### ✋ Interactable Objects & Basic AI
 - Terrain with many interactable objects such as trees, bushes, logs, etc.
+- Interactable items are highlighted when hovered and the player is in range to interact.
 - Slimes that wander until they find the player and chase them down. Also interactable.
 
 ### 🎒 Inventory System
