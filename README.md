@@ -40,10 +40,10 @@ Ashwood Survival is a Unity-based survival game set in a forested wilderness. Pl
 - Construction mode can be canceled.
 
 ## 🧰 Assets Used
-- Simple Green Slime by Garrett LeFever [CC-BY] via Poly Pizza: [https://poly.pizza/m/az-ryr8W44N] (https://poly.pizza/m/az-ryr8W44N)
-- Ultimate Nature Pack by Quaternius: [https://quaternius.com/packs/ultimatenature.html] (https://quaternius.com/packs/ultimatenature.html)
-- Character Animated by Quaternius: [https://poly.pizza/m/DgOCW9ZCRJ] (https://poly.pizza/m/DgOCW9ZCRJ)
-- Medieval Village Mega Kit by Quaternius: [https://quaternius.com/packs/medievalvillagemegakit.html] (https://quaternius.com/packs/medievalvillagemegakit.html)
-- Terrain Sample Asset Pack by Unity Technologies: [https://assetstore.unity.com/packages/3d/environments/landscapes/terrain-sample-asset-pack-145808#description] (https://assetstore.unity.com/packages/3d/environments/landscapes/terrain-sample-asset-pack-145808#description) 
-- Fantasy landscape by Pxltiger: [https://assetstore.unity.com/packages/3d/environments/fantasy-landscape-103573#description] (https://assetstore.unity.com/packages/3d/environments/fantasy-landscape-103573#description) 
-- Quick Outline by Chris Nolet: [https://assetstore.unity.com/packages/tools/particles-effects/quick-outline-115488] (https://assetstore.unity.com/packages/tools/particles-effects/quick-outline-115488) 
+- Simple Green Slime by Garrett LeFever [CC-BY] via Poly Pizza: [https://poly.pizza/m/az-ryr8W44N] 
+- Ultimate Nature Pack by Quaternius: [https://quaternius.com/packs/ultimatenature.html] 
+- Character Animated by Quaternius: [https://poly.pizza/m/DgOCW9ZCRJ] 
+- Medieval Village Mega Kit by Quaternius: [https://quaternius.com/packs/medievalvillagemegakit.html] 
+- Terrain Sample Asset Pack by Unity Technologies: [https://assetstore.unity.com/packages/3d/environments/landscapes/terrain-sample-asset-pack-145808#description] 
+- Fantasy landscape by Pxltiger: [https://assetstore.unity.com/packages/3d/environments/fantasy-landscape-103573#description]
+- Quick Outline by Chris Nolet: [https://assetstore.unity.com/packages/tools/particles-effects/quick-outline-115488] 
