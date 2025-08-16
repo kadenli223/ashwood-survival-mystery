@@ -117,8 +117,10 @@ MonoBehaviour:
   isTrashable: 0
   thisName: Wall
   thisDescription: You're running me up a wall.
-  thisFunctionality: Building
+  thisFunctionality: Right-Click to place. Building
   isConsumable: 0
   healthEffect: 0
   caloriesEffect: 0
   hydrationEffect: 0
+  isUseable: 1
+  itemPendingToBeUsed: {fileID: 0}

@@ -117,8 +117,10 @@ MonoBehaviour:
   isTrashable: 0
   thisName: Berries
   thisDescription: I think I found my berries.
-  thisFunctionality: +10 Health +25 Energy +10 Thirst
+  thisFunctionality: Right-Click to consume. +10 Health +25 Energy +10 Thirst
   isConsumable: 1
   healthEffect: 10
   caloriesEffect: 25
   hydrationEffect: 10
+  isUseable: 0
+  itemPendingToBeUsed: {fileID: 0}

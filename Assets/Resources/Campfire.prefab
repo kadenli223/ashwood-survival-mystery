@@ -117,8 +117,10 @@ MonoBehaviour:
   isTrashable: 0
   thisName: Campfire
   thisDescription: fire...BADDD!!
-  thisFunctionality: Decoration
+  thisFunctionality: Right-Click to place. Decoration
   isConsumable: 0
   healthEffect: 0
   caloriesEffect: 0
   hydrationEffect: 0
+  isUseable: 1
+  itemPendingToBeUsed: {fileID: 0}

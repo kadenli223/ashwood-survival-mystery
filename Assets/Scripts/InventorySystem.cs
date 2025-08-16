@@ -56,7 +56,7 @@ public class InventorySystem : MonoBehaviour
     void Update()
     {
 
-        if (Input.GetKeyDown(KeyCode.I) && !isOpen)
+        if (Input.GetKeyDown(KeyCode.I) && !isOpen && !ConstructionManager.Instance.inConstructionMode)
         {
 
             Debug.Log("i is pressed");

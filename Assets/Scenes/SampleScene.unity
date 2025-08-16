@@ -5823,6 +5823,8 @@ MonoBehaviour:
   ghostSemiTransparentMat: {fileID: 2100000, guid: d400959f18281334dad7899bccfc4300, type: 2}
   ghostFullTransparentMat: {fileID: 2100000, guid: 6a89231bd4683264f9ff4099cdee82a5, type: 2}
   allGhostsInExistence: []
+  itemToBeDestroyed: {fileID: 0}
+  player: {fileID: 1955573701}
 --- !u!1 &807005335
 GameObject:
   m_ObjectHideFlags: 0
@@ -7594,7 +7596,7 @@ Transform:
   m_GameObject: {fileID: 1018025386}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 12}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -11846,7 +11848,7 @@ GameObject:
   - component: {fileID: 1761711313}
   m_Layer: 8
   m_Name: Terrain
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647

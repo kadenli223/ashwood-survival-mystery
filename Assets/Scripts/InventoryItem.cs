@@ -27,8 +27,6 @@ public class InventoryItem : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
     public float hydrationEffect;
 
     public bool isUseable;
-    public GameObject itemPendingToBeUsed;
-
 
     private void Start()
     {
@@ -68,7 +66,8 @@ public class InventoryItem : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
 
             if (isUseable)
             {
-                itemPendingToBeUsed = gameObject;
+                ConstructionManager.Instance.itemToBeDestroyed = gameObject;
+                gameObject.SetActive(false);
                 UseItem();
             }
         }
@@ -80,13 +79,6 @@ public class InventoryItem : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
         if (eventData.button == PointerEventData.InputButton.Right)
         {
             if (isConsumable && itemPendingConsumption == gameObject)
-            {
-                DestroyImmediate(gameObject);
-                InventorySystem.Instance.ReCalculateList();
-                CraftingSystem.Instance.RefreshNeededItems();
-            }
-
-            if (isUseable && itemPendingToBeUsed == gameObject)
             {
                 DestroyImmediate(gameObject);
                 InventorySystem.Instance.ReCalculateList();

@@ -5,6 +5,14 @@ TagManager:
   serializedVersion: 2
   tags:
   - Slot
+  - activeConstructable
+  - Ground
+  - Tree
+  - pickable
+  - ghost
+  - placedFoundation
+  - wallGhost
+  - placedWall
   layers:
   - Default
   - TransparentFX

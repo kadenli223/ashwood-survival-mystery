@@ -161,7 +161,7 @@ public class CraftingSystem : MonoBehaviour
     {
         RefreshNeededItems();
 
-        if (Input.GetKeyDown(KeyCode.C) && !isOpen)
+        if (Input.GetKeyDown(KeyCode.C) && !isOpen && !ConstructionManager.Instance.inConstructionMode)
         {
 
             craftingScreenUI.SetActive(true);
